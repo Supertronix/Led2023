@@ -1,9 +1,6 @@
 #include <FastLED.h>
 
 #define LED_PIN     4 //câble orange
-#define LED_PIN     7 //câble vert
-#define LED_PIN     8 //câble jaune
-#define LED_PIN     2 //câble bleu
 #define NUM_LEDS    240
 #define BRIGHTNESS  64
 #define LED_TYPE    WS2812
