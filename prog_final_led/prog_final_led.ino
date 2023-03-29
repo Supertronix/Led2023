@@ -1,11 +1,11 @@
 #include <FastLED.h>
 
 #define LED_PIN     4 //câble orange
-#define LED_PIN     7 //câble vert
-#define LED_PIN     8 //câble jaune
-#define LED_PIN     2 //câble bleu
-#define NUM_LEDS    240
-#define BRIGHTNESS  64
+#define LED_PIN     7 //câble bleu
+#define LED_PIN     8 //câble vert
+#define LED_PIN     2 //câble jaune
+#define NUM_LEDS    300
+#define BRIGHTNESS  66
 #define LED_TYPE    WS2812
 #define COLOR_ORDER RGB
 CRGB leds[NUM_LEDS];
@@ -46,7 +46,7 @@ void FillLEDsFromPaletteColors( uint8_t colorIndex)
     
     for( int i = 0; i < NUM_LEDS; i++) {
         leds[i] = ColorFromPalette( currentPalette, colorIndex, brightness, currentBlending);
-        colorIndex += 3;
+        colorIndex += 7;
     }
 }
 
